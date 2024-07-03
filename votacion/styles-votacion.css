@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#tournament-header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#back-button {
+  order: 1;
+}
+
+#tournament-title {
+  order: 2;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#round-info {
+  order: 3;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#video-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#video1, #video2 {
+  width: 50%; /* Cada video ocupa el 48% del contenedor */
+  height: 500px; /* Asegura que los iframes ocupen todo el espacio vertical */
+}
+
+#video1 iframe, #video2 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px; /* Espacio entre los botones */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#winner-container {
+  margin-top: 2rem;
+}
+
+#winner-video iframe {
+  width: 50%; /* Video ganador ocupa el 100% del contenedor */
+  height: 500px; /* Ajusta la altura si es necesario */
+}
+/* Estilos para el texto "Hola Mundo" */
+#greeting {
+  color: white; /* Cambiar color a blanco */
+  user-select: none; /* Prevenir selección del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 0px; /* Añadir padding para espacio alrededor del texto */
+  position: relative; /* Permitir ajustes de posición */
+  top: -200px; /* Mover el texto hacia arriba */
+  font-size: 4em; /* Aumentar tamaño de la fuente */
+  font-weight: bold; /* Hacer el texto en negrita */
+  border: 5px solid #525ce6; /* Añadir un borde rojo */
+  text-shadow: 2px 2px 0 #41e0f5, -2px -2px 0 #38e6fd, 2px -2px 0 #39cee9, -2px 2px 0 #33eaf7; /* Añadir sombras */
+  background-color: #000; /* Fondo negro para mayor contraste */
+  display: inline-block; /* Hacer que el borde envuelva solo el texto */
+  padding: 10px; /* Añadir padding para espacio alrededor del texto */
+  margin: 0px;
+  animation: anime-effect 0.5s infinite alternate; /* Añadir animación */
+}
+
+

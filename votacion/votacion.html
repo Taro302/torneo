@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Votación</title>
+    <link rel="stylesheet" href="styles-votacion.css">
+</head>
+<body>
+    <header>
+        <div id="tournament-header">
+            <div id="back-button">
+                <button onclick="goBack()">Atrás</button>
+            </div>
+            <div id="tournament-title">
+                <h2 id="tournament-name">Nombre del Torneo</h2>
+            </div>
+            <div id="round-info">
+                <p id="round-number"></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="tournament">
+                <div id="video-container">
+                    <div id="video1"></div>
+                    <div id="video2"></div>
+                </div>
+                <h1 id="greeting">VS</h1>
+                <div id="button-container" class="boton-votar">
+                    <button id="vote1">Votar por Video 1</button>
+                    <button id="vote2">Votar por Video 2</button>
+                </div>
+                <div id="winner-container" class="hidden">
+                    <p id="winner-message"></p>
+                    <div id="winner-video"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="scripts-votacion.js"></script>
+</body>
+</html>

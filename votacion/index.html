@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Votación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Página de Votación</div>
+    <ul class="nav-links">
+        <li><a href="#" onclick="showContent('Inicio')">Inicio</a></li>
+        <li class="dropdown">
+            <a href="paginas/generos.html" onclick="showContent('Géneros')">Géneros</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Acción</a></li>
+                <li><a href="#">Aventura</a></li>
+                
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Fantasía</a></li>
+                <li><a href="#">Ver más</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+
+<!-- Añade la estructura HTML para el perfil de usuario y la lista desplegable -->
+
+
+</div>
+
+
+
+<div class="presentation">
+    <div class="presentation-content">
+        <h1>Bienvenido a nuestro Proyecto de Votación</h1>
+        <p>¡Te damos la bienvenida a nuestro innovador Proyecto de Votación! Aquí, puedes explorar, votar y descubrir tus videos favoritos de diferentes géneros musicales.</p>
+        <p>Nuestro objetivo es brindarte una experiencia interactiva donde tu opinión cuenta y contribuye a determinar los mejores contenidos de cada categoría.</p>
+        <a href="#new-votes" class="vote-button">Vota</a>
+    </div>
+</div>
+<div class="new-votes">
+    <div class="new-votes-content" id="new-votes">
+        <h2>Nuevas votaciones agregadas</h2>
+        <div class="catalog-container">
+            <div class="catalog-item">
+                <a href="votacion.html?id=3" id="3"><img src="img/OIP.jpg" alt="Imagen" >
+                <div class="catalog-item-title">hololive</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href="votacion.html?id=2" id="2"><img src="img/anime.webp" alt="Imagen" >
+                <div class="catalog-item-title">hololive 21</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href="votacion.html?id=1" id="1"><img src="img/hololive.webp" alt="Imagen" >
+                <div class="catalog-item-title">holo 31</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href=""><img src="img/OIP.jpg" alt="Imagen" >
+                <div class="catalog-item-title">Título de la Imagen 1</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href=""><img src="img/OIP.jpg" alt="Imagen" >
+                <div class="catalog-item-title">Título de la Imagen 1</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href=""><img src="img/OIP.jpg" alt="Imagen" >
+                <div class="catalog-item-title">Título de la Imagen 1</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href=""><img src="img/OIP.jpg" alt="Imagen" >
+                <div class="catalog-item-title">Título de la Imagen 1</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href=""><img src="img/OIP.jpg" alt="Imagen" >
+                <div class="catalog-item-title">Título de la Imagen 1</div></a>
+            </div>
+            <div class="catalog-item">
+                <a href=""><img src="img/OIP.jpg" alt="Imagen" >
+                <div class="catalog-item-title">Título de la Imagen 1</div></a>
+            </div>
+            <!-- Repetir para más imágenes -->
+        </div>
+    </div>
+</div>
+<div class="recommendation-section">
+    <div class="recommendation-content">
+        <h2>Déjanos tu recomendación de qué lista deseas encontrar en nuestro Discord</h2>
+        <a href="https://discord.com" target="_blank" class="discord-button">Únete a nuestro Discord</a>
+    </div>
+</div>
+
+
+<script src="../script.js"></script>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Proyecto de Votación. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

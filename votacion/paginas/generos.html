@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géneros</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="filtro.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Página de Votación</div>
+        <ul class="nav-links">
+            <li><a href="../index.html" onclick="showContent('Inicio')">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="showContent('Géneros')">Géneros</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Acción</a></li>
+                    <li><a href="#">Aventura</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Fantasía</a></li>
+                    <li><a href="#">Ver más</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar votación...">
+            <button onclick="searchVotaciones()">Buscar</button>
+        </div>
+        
+        <div class="content">
+            <div class="filters">
+                <h3>Filtros</h3>
+                
+                    <ul>
+                        <li><input type="checkbox" value="Pop" id="filter-pop"> Pop</li>
+                        <li><input type="checkbox" value="Rock" id="filter-rock"> Rock</li>
+                        <li><input type="checkbox" value="Electrónica" id="filter-electronica"> Electrónica</li>
+                        <li><input type="checkbox" value="K-Pop" id="filter-kpop"> K-Pop</li>
+                        <li><input type="checkbox" value="Indie" id="filter-indie"> Indie</li>
+                        <li><input type="checkbox" value="Anime" id="filter-anime"> Anime</li>
+                        <li><input type="checkbox" value="Latino" id="filter-latino"> Latino</li>
+                        <li><input type="checkbox" value="VTuber" id="filter-vtuber"> VTuber</li>
+                    </ul>
+                    
+                    
+                
+            </div>
+            
+            <div id="catalog" class="catalog">
+                <!-- Aquí se mostrarán las imágenes y títulos de las votaciones -->
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <button id="prevBtn">Anterior</button>
+            <span id="pageNum">1</span>
+<button id="nextBtn">Siguiente</button>
+
+           
+    
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 Proyecto de Votación. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../scriptgenero.js"></script>
+</body>
+</html>
